@@ -1,6 +1,6 @@
 /* Aquaproved Review (nl) - service worker
    Offline-werking op de werf. navigate=network-first, assets=cache-first (zelfde opbouw als de pleisterdikte-calculator). */
-var CACHE = 'aqp-review-nl-v1-2-0-127';
+var CACHE = 'aqp-review-nl-v1-2-1-127';
 self.addEventListener('install', function(e) {
     e.waitUntil(caches.open(CACHE).then(function(c) {
         return c.addAll(['./', './manifest.json', './icons/icon-192x192.png']).catch(function() {});
